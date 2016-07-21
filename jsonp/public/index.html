@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>JSONP test</title>
+  </head>
+  <body>
+    <script src="javascripts/jquery.js"></script>
+    <script type="text/javascript">
+		
+       $().ready(function(){
+			/*
+			$.ajax({
+				type : "get",
+				url : "http://localhost:3000/javascripts/remote_1.js",  
+                dataType : "jsonp",
+				success: function(json){
+					alert(json.val);
+				}
+			})
+			*/
+			
+			$.ajax({
+				type : "get",
+				url : "http://localhost:3000/javascripts/remote_1.js",  
+                dataType : "jsonp",
+				jsonP: 'handler'
+			})
+			
+			function handler(json){
+				alert(json.val);
+			}
+	   })
+    </script>
+  </body>
+</html>

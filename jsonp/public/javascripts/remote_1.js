@@ -1,0 +1,1 @@
+alert("remote js 1");
