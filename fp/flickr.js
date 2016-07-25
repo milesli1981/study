@@ -1,7 +1,7 @@
 requirejs.config({
   paths: {
-    ramda: 'https://cdnjs.cloudflare.com/ajax/libs/ramda/0.13.0/ramda.min',
-    jquery: 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min'
+    ramda: 'node_modules/ramda/dist/ramda.min',
+    jquery: 'node_modules/jquery/dist/jquery.min'
   }
 });
 
